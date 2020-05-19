@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>UI Evaluation Survey: Quora</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+  <!-- Bootstrap CDN for BS4 -->
+
+  <link rel="stylesheet" type="text/css" href="lab1_style.css"> 
+  <!-- Main CSS file -->
+</head>
+<body style="background-color: #C5C5C5">
+  <h1> Survey on UI quality </h1>
+  <br>
+  <h2>Visit this website<a href="https://www.foodrecoverynetwork.org/" target="_blank"> here</a> or by clicking below and answer some questions.</h2>
+  <br>
+  <p class="imagelogo"><a href="https://www.foodrecoverynetwork.org/" target="_blank"> 
+    <img border="0" alt="Quora Logo" src="recoverylogo.jpg" width="500" height="300">
+  </a> </p>
+  <form>
+
+    <div class="question">
+      <p> Based off the homepage, what does this organisation do? </p>
+      <input type="text" id="q1" name="q1">
+    </div>
+    
+    <div class="question">
+      <p> What caught your eye first? </p>
+      <input type="radio" name="q2" value="imgplace"> The image placement<br>
+      <input type="radio" name="q2" value="animation"> The animations<br>
+      <input type="radio" name="q2" value="graph"> The Infographics<br>
+      <input type="radio" name="q2" value="other"> Other <br>
+    </div>
+    
+    <div class="question">
+      <p> What elements of UI design did you notice the most? </p>
+      <select id="q3">
+        <option value="function">Functionality</option>
+        <option value="efficient">Efficiency</option>
+        <option value="reliable">Reliability</option>
+        <option value="consistent">Consistency</option>
+      </select>
+    </div>
+    <br>
+
+    <div class="question">
+      <p> Please check all that apply after visiting this site.</p>
+      <input type="checkbox" name="visitagain" value="visit">
+      <label for="vehicle1"> I would visit this site again</label><br>
+      <input type="checkbox" name="easyinfo" value="easyinfo">
+      <label for="vehicle1"> I found it easy to get all the info I needed</label><br>
+      <input type="checkbox" name="interest" value="interest">
+      <label for="vehicle1"> This site made me interested in learning more</label><br>
+      
+    </div>
+
+    <div class="question">
+      <p> Have any comments? </p>
+      <textarea id="comments" rows="4" cols="50" placeholder="Write your comments here "></textarea>
+    </div>
+
+    <div class="question">
+      <p>Do you think this UI is effective? </p>
+      <br>
+      
+      <div class="slidequestions">
+        <div class="columns">Completely disagree</div>
+        <div class="columns">Slightly disagree</div>
+        <div class="columns">Neutral</div>
+        <div class="columns">Slightly agree</div>
+        <div class="columns">Completely agree</div>
+        
+
+      </div>
+      <div class="slideholder">
+        <input type="range" min="1" max="5" value="3" class="slider">
+      </div>
+    </div>
+    <div class="bottombuttons">
+      <input type="submit" value="Submit" >
+      <input type="reset" name="Reset">
+    </div>
+    
+  </form>
+</body>
+<footer>
+
+  <p><i>Designed by: Matthew Tran, 300028206</i></p>
+
+</footer>
+</html>
